@@ -15,6 +15,9 @@ public class snakeAndLadder {
             break;
          case 1:
             System.out.println("Case of Ladder");
+            if (  (player_position + dice_value) > 100 ){
+               continue;
+            }
             player_position += dice_value;
             System.out.println(player_position);
             break;
